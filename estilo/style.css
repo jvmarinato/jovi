@@ -1,0 +1,31 @@
+.dropdown {
+    position: relative; /* Posicionamento relativo para o menu principal */
+    display: inline-block; /* Manter o tamanho do menu como texto */
+  }
+
+  .dropdown-toggle {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    background-color: #ccc; /* Cor de fundo do botão */
+    cursor: pointer; /* Indicar que o elemento é clicável */
+  }
+
+  .dropdown-menu {
+    display: none; /* Ocultar o menu por padrão */
+    position: absolute; /* Posicionamento absoluto para o submenu */
+    background-color: #f9f9f9; /* Cor de fundo do submenu */
+    min-width: 160px; /* Largura mínima do submenu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra do submenu */
+    z-index: 1; /* Posicionar o submenu acima de outros elementos */
+  }
+
+  .dropdown-menu a {
+    color: black; /* Cor do texto do submenu */
+    padding: 12px 16px; /* Espaçamento interno dos itens do submenu */
+    text-decoration: none; /* Remover decoração padrão dos links */
+    display: block; /* Exibir cada item do submenu como um bloco */
+  }
+
+  /* Estilos para o menu quando o hover estiver ativo */
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
